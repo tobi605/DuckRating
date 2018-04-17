@@ -1,0 +1,5 @@
+main act:
+    scrollable list with ducks, rating in 5 stars
+
+top list act:
+    scrollable list with scores, clickable items
