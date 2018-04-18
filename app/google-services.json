@@ -1,0 +1,55 @@
+{
+  "project_info": {
+    "project_number": "442587812245",
+    "firebase_url": "https://duckrating.firebaseio.com",
+    "project_id": "duckrating",
+    "storage_bucket": "duckrating.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:442587812245:android:6f92570b71412a3c",
+        "android_client_info": {
+          "package_name": "com.diamentowygimbus.duckrating"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "442587812245-d2oorgknre3nsoj6b186cpks9055cff8.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.diamentowygimbus.duckrating",
+            "certificate_hash": "e7ad0a506716304fb781cc036232058aae3998ff"
+          }
+        },
+        {
+          "client_id": "442587812245-cvtj3ip14ppkvpov1cm55ahnvmm5e5to.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyD3nXLedD6ytmqcuCMhjsA51ZvmSH6HF28"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 2,
+          "other_platform_oauth_client": [
+            {
+              "client_id": "442587812245-cvtj3ip14ppkvpov1cm55ahnvmm5e5to.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
