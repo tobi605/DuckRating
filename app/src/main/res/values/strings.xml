@@ -5,4 +5,6 @@
     <!-- TODO: Remove or change this placeholder text -->
     <string name="hello_blank_fragment">Hello blank fragment</string>
     <string name="menu_top">Top</string>
+    <string name="duck_item_button">Show comments</string>
+    <string name="item_image_description">Here should be a duck</string>
 </resources>
