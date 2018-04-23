@@ -15,30 +15,7 @@ import java.util.List;
 class DuckAdapter extends RecyclerView.Adapter<DuckAdapter.ViewHolder> {
     private List<Duck> duckList;
 
-    class ViewHolder extends RecyclerView.ViewHolder {
-
-        TextView title;
-        ImageView image;
-        RatingBar userRating;
-        TextView generalRating;
-        TextView numberOfComments;
-        Button showComments;
-        View layout;
-
-
-        ViewHolder(View itemView) {
-            super(itemView);
-            layout = itemView;
-            title = layout.findViewById(R.id.item_title);
-            image = layout.findViewById(R.id.item_image);
-            userRating = layout.findViewById(R.id.item_user_rating);
-            generalRating = layout.findViewById(R.id.item_general_rating);
-            numberOfComments = layout.findViewById(R.id.item_number_comments);
-            showComments = layout.findViewById(R.id.item_comments);
-        }
-    }
-
-    DuckAdapter(List<Duck> ducks){
+    DuckAdapter(List<Duck> ducks) {
         this.duckList = ducks;
     }
 
@@ -56,9 +33,9 @@ class DuckAdapter extends RecyclerView.Adapter<DuckAdapter.ViewHolder> {
         holder.title.setText(current.getTitle());
         //holder.image.setImage(); TODO
         //holder.userRating.setRating(); TODO
-        String general = ""+String.format("%.2f", average(current.getRating()))+"/5";
+        String general = "" + String.format("%.2f", average(current.getRating())) + "/5";
         holder.generalRating.setText(general);
-        String comments = "Comments: "+current.getComments().length;
+        String comments = "Comments: " + current.getComments().length;
         holder.numberOfComments.setText(comments);
         holder.showComments.setOnClickListener(new View.OnClickListener() {
             @Override
@@ -73,11 +50,33 @@ class DuckAdapter extends RecyclerView.Adapter<DuckAdapter.ViewHolder> {
         return duckList.size();
     }
 
-    private float average(int[] values){
+    private float average(int[] values) {
         float average = 0;
-        for (int i : values){
-            average+= i;
+        for (int i : values) {
+            average += i;
         }
-        return average/values.length;
+        return average / values.length;
+    }
+
+    class ViewHolder extends RecyclerView.ViewHolder {
+
+        TextView title;
+        ImageView image;
+        RatingBar userRating;
+        TextView generalRating;
+        TextView numberOfComments;
+        Button showComments;
+        View layout;
+
+        ViewHolder(View itemView) {
+            super(itemView);
+            layout = itemView;
+            title = layout.findViewById(R.id.item_title);
+            image = layout.findViewById(R.id.item_image);
+            userRating = layout.findViewById(R.id.item_user_rating);
+            generalRating = layout.findViewById(R.id.item_general_rating);
+            numberOfComments = layout.findViewById(R.id.item_number_comments);
+            showComments = layout.findViewById(R.id.item_comments);
+        }
     }
 }
